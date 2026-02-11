@@ -362,7 +362,7 @@ function App() {
                 <SelectTrigger className="rounded-none border-slate-200" data-testid="year-filter-select">
                   <SelectValue placeholder="Filter by year" />
                 </SelectTrigger>
-                <SelectContent>
+                <SelectContent className="z-50">
                   <SelectItem value="all">All Years</SelectItem>
                   {uniqueYears.map(year => (
                     <SelectItem key={year} value={year.toString()}>{year}</SelectItem>
@@ -373,7 +373,7 @@ function App() {
                 <SelectTrigger className="rounded-none border-slate-200" data-testid="type-filter-select">
                   <SelectValue placeholder="Filter by type" />
                 </SelectTrigger>
-                <SelectContent>
+                <SelectContent className="z-50">
                   <SelectItem value="all">All Types</SelectItem>
                   <SelectItem value="journal">Journal Articles</SelectItem>
                   <SelectItem value="conference">Conference Papers</SelectItem>
