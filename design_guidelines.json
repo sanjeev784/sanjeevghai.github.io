@@ -1,0 +1,117 @@
+{
+  "design_system": {
+    "typography": {
+      "font_family": {
+        "heading": "Playfair Display, serif",
+        "body": "Manrope, sans-serif",
+        "mono": "JetBrains Mono, monospace"
+      },
+      "scale": {
+        "h1": "text-5xl md:text-7xl font-medium tracking-tight leading-[1.1]",
+        "h2": "text-3xl md:text-5xl font-normal tracking-tight",
+        "h3": "text-xl md:text-2xl font-medium",
+        "body": "text-base md:text-lg leading-relaxed text-slate-600",
+        "caption": "text-sm font-mono uppercase tracking-widest text-slate-500"
+      }
+    },
+    "colors": {
+      "palette": {
+        "primary": {
+          "DEFAULT": "#0F172A",
+          "foreground": "#FFFFFF"
+        },
+        "secondary": {
+          "DEFAULT": "#8EE8D8",
+          "foreground": "#0F172A"
+        },
+        "accent": {
+          "DEFAULT": "#00BDB6",
+          "foreground": "#FFFFFF"
+        },
+        "background": "#FAFAF9",
+        "surface": "#FFFFFF",
+        "border": "#E2E8F0",
+        "muted": "#64748B"
+      },
+      "cambridge_specific": {
+        "cambridge_blue": "#8EE8D8",
+        "cambridge_light": "#D1F9F1",
+        "cambridge_warm": "#00BDB6"
+      }
+    },
+    "layout": {
+      "grid_system": "grid grid-cols-1 md:grid-cols-12 gap-6 md:gap-12",
+      "container": "max-w-7xl mx-auto px-6 md:px-12",
+      "spacing": {
+        "section_padding": "py-24 md:py-32",
+        "element_gap": "gap-8"
+      }
+    },
+    "visual_enhancers": {
+      "radius": "rounded-none",
+      "shadows": "shadow-[0_1px_2px_rgba(0,0,0,0.05)]",
+      "borders": "border border-slate-200",
+      "glassmorphism": "bg-white/80 backdrop-blur-md border-b border-slate-200/50"
+    }
+  },
+  "components": {
+    "buttons": {
+      "primary": "bg-slate-900 text-white px-8 py-4 text-sm font-mono uppercase tracking-widest hover:bg-slate-800 transition-all duration-300 rounded-none",
+      "secondary": "bg-transparent border border-slate-200 text-slate-900 px-8 py-4 text-sm font-mono uppercase tracking-widest hover:bg-slate-50 transition-all duration-300 rounded-none"
+    },
+    "cards": {
+      "academic_paper": "group relative bg-white p-8 border border-slate-100 hover:border-slate-300 transition-all duration-500 hover:shadow-lg",
+      "feature": "bg-slate-50 p-12 border-l-2 border-cambridge-blue"
+    },
+    "navigation": {
+      "style": "fixed top-0 w-full z-50 bg-white/90 backdrop-blur-md border-b border-slate-100",
+      "link": "text-sm font-mono uppercase tracking-widest text-slate-500 hover:text-slate-900 transition-colors"
+    }
+  },
+  "assets": {
+    "images": {
+      "hero_background": {
+        "url": "https://images.unsplash.com/photo-1763025924393-59a46f8d64bf?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NDQ2NDF8MHwxfHNlYXJjaHwzfHxmbHVpZCUyMGR5bmFtaWNzJTIwYWJzdHJhY3QlMjB2aXN1YWxpemF0aW9ufGVufDB8fHx8MTc3MDc4MTg1N3ww&ixlib=rb-4.1.0&q=85",
+        "alt": "Abstract Fluid Dynamics Visualization",
+        "usage": "Hero section right column or subtle background overlay"
+      },
+      "profile_placeholder": {
+        "url": "https://images.unsplash.com/photo-1758599543154-76ec1c4257df?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA1Mjh8MHwxfHNlYXJjaHwyfHxwcm9mZXNzaW9uYWwlMjBtYW4lMjBwb3J0cmFpdCUyMGFjYWRlbWljfGVufDB8fHx8MTc3MDc4MTg2NHww&ixlib=rb-4.1.0&q=85",
+        "alt": "Dr. Sanjeev Kumar Ghai Portrait",
+        "usage": "About section and Hero"
+      },
+      "cambridge_context": {
+        "url": "https://images.unsplash.com/photo-1698226509825-3e0083e86f05?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2Nzd8MHwxfHNlYXJjaHwxfHxjYW1icmlkZ2UlMjB1bml2ZXJzaXR5JTIwYXJjaGl0ZWN0dXJlfGVufDB8fHx8MTc3MDc4MTg2Mnww&ixlib=rb-4.1.0&q=85",
+        "alt": "University of Cambridge Architecture",
+        "usage": "Contact section background or Footer"
+      }
+    },
+    "icons": "Use 'lucide-react' for all UI icons (e.g., Download, ExternalLink, Mail, MapPin)"
+  },
+  "motion": {
+    "library": "framer-motion",
+    "settings": {
+      "initial": { "opacity": 0, "y": 20 },
+      "animate": { "opacity": 1, "y": 0 },
+      "transition": { "duration": 0.6, "ease": [0.22, 1, 0.36, 1] }
+    },
+    "scroll": "Use 'lenis' for smooth scrolling"
+  },
+  "instructions_to_main_agent": [
+    "THEME: Strict Light Mode. Do not implement Dark Mode unless explicitly requested by toggle, but default to Light.",
+    "LAYOUT: Use a 'Split Screen' or 'Bento Grid' layout. Avoid standard single-column flows.",
+    "TYPOGRAPHY: Use 'Playfair Display' for all Headings (H1-H3) to give that prestigious academic feel. Use 'Manrope' for body text.",
+    "COLOR: Use 'Cambridge Blue' (#8EE8D8) sparingly as an accent (lines, buttons, highlights). The main palette should be White, Off-White (#FAFAF9), and Slate-900.",
+    "PUBLICATIONS: Do not use cards. Use a clean, dense 'Data List' layout with year on the left and details on the right.",
+    "IMAGES: Use the provided 'Fluid Dynamics' image as a subtle artistic element, not just a background. Maybe mask it into a shape.",
+    "NAVBAR: Sticky, glassmorphism, with a very subtle 1px border bottom.",
+    "FOOTER: Minimalist, large typography for 'Get in Touch'."
+  ],
+  "universal_guidelines": [
+    "Do not use gradients for text.",
+    "Ensure all interactive elements have hover states (text color change or subtle lift).",
+    "Use 'data-testid' for all interactive elements.",
+    "Avoid 'Inter' for headings. Use the specified 'Playfair Display'.",
+    "Keep the design 'Airy' - use py-24 or py-32 for section spacing."
+  ]
+}
