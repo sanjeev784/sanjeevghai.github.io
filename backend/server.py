@@ -137,7 +137,7 @@ async def download_cv():
         )
     raise HTTPException(status_code=404, detail="CV not found")
 
-@api_router.post("/seed-database")
+@api_router.get("/seed-database")
 async def seed_database():
     """Endpoint to seed the database with initial data"""
     try:
