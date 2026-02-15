@@ -235,7 +235,7 @@ function App() {
             >
               <div className="aspect-square overflow-hidden border border-slate-200">
                 <img
-                  src="https://images.unsplash.com/photo-1758599543154-76ec1c4257df?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA1Mjh8MHwxfHNlYXJjaHwyfHxwcm9mZXNzaW9uYWwlMjBtYW4lMjBwb3J0cmFpdCUyMGFjYWRlbWljfGVufDB8fHx8MTc3MDc4MTg2NHww&ixlib=rb-4.1.0&q=85"
+                  src="https://github.com/sanjeev784/sanjeevghai.github.io/blob/main/DSC_0129.JPG"
                   alt={profile.name}
                   className="w-full h-full object-cover"
                   data-testid="hero-image"
