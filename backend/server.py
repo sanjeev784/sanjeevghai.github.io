@@ -172,31 +172,168 @@ async def seed_database():
         
         # Seed publications
         publications = [
-            {
-                "title": "Numerical simulations of turbulent lifted jet diffusion flames in a vitiated coflow using stochastic multiple mapping conditioning approach",
-                "authors": "S. K. Ghai, S. De",
-                "journal": "Proceedings of the Combustion Institute",
-                "year": 2021,
-                "type": "journal",
-                "status": "published"
-            },
-            {
-                "title": "Entropy Generation during Head-On Interaction of Premixed Flames with Inert Walls within Turbulent Boundary Layers",
-                "authors": "S. K. Ghai, N. Chakraborty",
-                "journal": "Physics of Fluids",
-                "year": 2023,
-                "type": "journal",
-                "status": "published"
-            },
-            {
-                "title": "Energy integral equation for premixed flame-wall interaction in turbulent boundary layers",
-                "authors": "S. K. Ghai, N. Chakraborty",
-                "journal": "Flow, Turbulence and Combustion",
-                "year": 2023,
-                "type": "journal",
-                "status": "published"
-            }
-        ]
+{
+    "title": "Numerical simulations of turbulent lifted jet diffusion flames in a vitiated coflow using stochastic multiple mapping conditioning approach",
+    "authors": "S. K. Ghai, S. De, A. Kronenburg",
+    "journal": "Proceedings of the Combustion Institute",
+    "year": 2019,
+    "type": "journal",
+    "status": "published"
+},
+{
+    "title": "Numerical modelling of turbulent premixed combustion using RANS based stochastic multiple mapping conditioning approach",
+    "authors": "S. K. Ghai, S. De",
+    "journal": "Proceedings of the Combustion Institute",
+    "year": 2019,
+    "type": "journal",
+    "status": "published"
+},
+{
+    "title": "Numerical investigation of auto-igniting turbulent lifted CH4/Air jet diffusion flames in a vitiated co-flow using a RANS based stochastic multiple mapping conditioning approach",
+    "authors": "S. K. Ghai, S. De",
+    "journal": "Combustion and Flame",
+    "year": 2019,
+    "type": "journal",
+    "status": "published"
+},
+{
+    "title": "Numerical investigation of flow and scalar fields of piloted, partially-premixed dimethyl ether/air jet flames using stochastic multiple mapping conditioning approach",
+    "authors": "S. K. Ghai, S. De",
+    "journal": "Combustion and Flame",
+    "year": 2019,
+    "type": "journal",
+    "status": "published"
+},
+{
+    "title": "Entropy Generation during Head-On Interaction of Premixed Flames with Inert Walls within Turbulent Boundary Layers",
+    "authors": "S. K. Ghai, U. Ahmed, N. Chakraborty, M. Klein",
+    "journal": "Entropy",
+    "year": 2022,
+    "type": "journal",
+    "status": "published"
+},
+{
+    "title": "Energy integral equation for premixed flame-wall interaction in turbulent boundary layers and its application to turbulent burning velocity and wall flux evaluations",
+    "authors": "S. K. Ghai, U. Ahmed, N. Chakraborty, M. Klein",
+    "journal": "International Journal of Heat and Mass Transfer",
+    "year": 2022,
+    "type": "journal",
+    "status": "published"
+},
+{
+    "title": "Enstrophy evolution during head-on wall interaction of premixed flames within turbulent boundary layers",
+    "authors": "S. K. Ghai, U. Ahmed, N. Chakraborty, M. Klein",
+    "journal": "Physics of Fluids",
+    "year": 2022,
+    "type": "journal",
+    "status": "published"
+},
+{
+    "title": "Turbulent kinetic energy evolution in turbulent boundary layers during head-on interaction of premixed flames with inert walls for different thermal boundary conditions",
+    "authors": "S. K. Ghai, U. Ahmed, N. Chakraborty, M. Klein",
+    "journal": "Proceedings of the Combustion Institute",
+    "year": 2023,
+    "type": "journal",
+    "status": "published"
+},
+{
+    "title": "Effects of fuel Lewis number on wall heat transfer during oblique flame-wall interaction of premixed flames within turbulent boundary layers",
+    "authors": "S. K. Ghai, U. Ahmed, N. Chakraborty",
+    "journal": "Flow Turbulence and Combustion",
+    "year": 2023,
+    "type": "journal",
+    "status": "published"
+},
+{
+    "title": "Statistical behaviour and modelling of variances of reaction progress variable and temperature during flame-wall interaction of premixed flames within turbulent boundary layers",
+    "authors": "S. K. Ghai, U. Ahmed, N. Chakraborty",
+    "journal": "Flow Turbulence and Combustion",
+    "year": 2024,
+    "type": "journal",
+    "status": "published"
+},
+{
+    "title": "Modelling of Flame Surface Density during flame-wall interaction of premixed flames within turbulent boundary layers",
+    "authors": "S. K. Ghai, U. Ahmed, N. Chakraborty",
+    "journal": "Combustion Science and Technology",
+    "year": 2024,
+    "type": "journal",
+    "status": "in press"
+},
+{
+    "title": "Effects of Partial Premixing and coflow temperature on flame stabilization of lifted jet flames of dimethyl ether in a vitiated coflow based on stochastic MMC approach",
+    "authors": "S. K. Ghai, R. Gupta, S. De",
+    "journal": "Fluids",
+    "year": 2024,
+    "type": "journal",
+    "status": "published"
+},
+{
+    "title": "Assessment of laws of the wall during flame-wall interaction of premixed flames within turbulent boundary layers",
+    "authors": "U. Ahmed, S. K. Ghai, N. Chakraborty",
+    "journal": "Flow Turbulence and Combustion",
+    "year": 2024,
+    "type": "journal",
+    "status": "published"
+},
+{
+    "title": "Relations between Reynolds stresses and their dissipation rates during premixed flame-wall interaction within turbulent boundary layers",
+    "authors": "U. Ahmed, S. K. Ghai, N. Chakraborty",
+    "journal": "Physics of Fluids",
+    "year": 2024,
+    "type": "journal",
+    "status": "published"
+},
+{
+    "title": "Direct Numerical Simulation Analysis of the Closure of Turbulent Scalar Flux during Flame–Wall Interaction of Premixed Flames within Turbulent Boundary Layers",
+    "authors": "U. Ahmed, S. K. Ghai, N. Chakraborty",
+    "journal": "Energies",
+    "year": 2024,
+    "type": "journal",
+    "status": "published"
+},
+{
+    "title": "Multiscale analysis of Reynolds stresses and dissipation during premixed flame wall interaction",
+    "authors": "S. K. Ghai, U. Ahmed, N. Chakraborty, M. Klein",
+    "journal": "Physics of Fluids",
+    "year": 2024,
+    "type": "journal",
+    "status": "in press"
+},
+{
+    "title": "Anisotropy of Reynolds stresses and their dissipation rates in lean H2-air flames in different regimes of turbulent premixed combustion",
+    "authors": "N. Chakraborty, S. K. Ghai, H. Im",
+    "journal": "Energies",
+    "year": 2024,
+    "type": "journal",
+    "status": "published"
+},
+{
+    "title": "Effects of thermal boundary conditions on scalar and turbulence statistics during premixed flame-wall interaction within turbulent boundary layers",
+    "authors": "S. K. Ghai, U. Ahmed, N. Chakraborty",
+    "journal": "Flow Turbulence and Combustion",
+    "year": 2024,
+    "type": "journal",
+    "status": "in press"
+},
+{
+    "title": "Stabilization of lifted dimethyl ether jet diffusion flames in vitiated coflow using MMC-LES",
+    "authors": "P. Nahak, S. K. Ghai, E. Sharma, S. De, M. J. Cleary",
+    "journal": "Fuel",
+    "year": 2025,
+    "type": "journal",
+    "status": "under submission"
+},
+{
+    "title": "Effects of fuel Lewis number on turbulent flow statistics in oblique-wall quenching of premixed V-shaped flames within turbulent channel flows",
+    "authors": "N. Chakraborty, S. K. Ghai, U. Ahmed",
+    "journal": "To be submitted",
+    "year": 2025,
+    "type": "journal",
+    "status": "in preparation"
+}
+]
+
         
         await db.publications.insert_many(publications)
         
