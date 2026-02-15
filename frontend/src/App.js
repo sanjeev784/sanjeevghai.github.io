@@ -49,6 +49,7 @@ function App() {
 
   useEffect(() => {
     filterPublications();
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [publications, searchTerm, yearFilter, typeFilter]);
 
   const fetchProfile = async () => {
