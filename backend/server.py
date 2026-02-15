@@ -132,6 +132,85 @@ async def download_cv():
         )
     raise HTTPException(status_code=404, detail="CV not found")
 
+@api_router.post("/seed-database")
+async def seed_database():
+    """Endpoint to seed the database with initial data"""
+    try:
+        # Clear existing data
+        await db.publications.delete_many({})
+        await db.news.delete_many({})
+        await db.profile.delete_many({})
+        
+        # Seed profile
+        profile = {
+            "name": "Dr. Sanjeev Kumar Ghai",
+            "title": "Research Associate",
+            "affiliation": "Department of Engineering, University of Cambridge, UK",
+            "email": "snjv.ghai@gmail.com",
+            "phone": "+44-7587921560",
+            "address": "#23 Cranesbill close, Cambridge, UK-CB4 2YQ",
+            "bio": "Research Associate at the University of Cambridge with expertise in Computational Fluid Dynamics, turbulent reacting flows, and advanced combustion modeling. PhD from IIT Kanpur with extensive experience in numerical simulations and data-driven approaches for flame dynamics optimization.",
+            "research_interests": [
+                "Computational Fluid Dynamics",
+                "Turbulent Reacting Flows",
+                "Chemical Kinetics",
+                "Spray Combustion",
+                "Flame Wall Interaction",
+                "Advanced Turbulent Combustion Modelling",
+                "Flame Dynamics",
+                "MILD and Premixed Combustion",
+                "Heat Transfer",
+                "Turbulence"
+            ]
+        }
+        await db.profile.insert_one(profile)
+        
+        # Seed publications
+        publications = [
+            {
+                "title": "Numerical simulations of turbulent lifted jet diffusion flames in a vitiated coflow using stochastic multiple mapping conditioning approach",
+                "authors": "S. K. Ghai, S. De",
+                "journal": "Proceedings of the Combustion Institute",
+                "year": 2021,
+                "type": "journal",
+                "status": "published"
+            },
+            {
+                "title": "Entropy Generation during Head-On Interaction of Premixed Flames with Inert Walls within Turbulent Boundary Layers",
+                "authors": "S. K. Ghai, N. Chakraborty",
+                "journal": "Physics of Fluids",
+                "year": 2023,
+                "type": "journal",
+                "status": "published"
+            },
+            {
+                "title": "Energy integral equation for premixed flame-wall interaction in turbulent boundary layers",
+                "authors": "S. K. Ghai, N. Chakraborty",
+                "journal": "Flow, Turbulence and Combustion",
+                "year": 2023,
+                "type": "journal",
+                "status": "published"
+            }
+        ]
+        
+        await db.publications.insert_many(publications)
+        
+        # Seed news
+        news = [
+            {
+                "title": "Joined University of Cambridge",
+                "content": "Started as Research Associate at the Department of Engineering, University of Cambridge.",
+                "date": "2024-04-01",
+                "category": "career"
+            }
+        ]
+        
+        await db.news.insert_many(news)
+        
+        return {"success": True, "message": "Database seeded successfully!"}
+    except Exception as e:
+        raise HTTPException(status_code=500, detail=f"Error seeding database: {str(e)}")
+
 
 # Add CORS middleware BEFORE including router
 app.add_middleware(
