@@ -703,10 +703,10 @@ function App() {
               © {new Date().getFullYear()} {profile.name}. All rights reserved.
             </p>
             <div className="flex gap-6">
-              <a href="https://scholar.google.com" target="_blank" rel="noopener noreferrer" className="text-sm text-slate-500 hover:text-slate-900 transition-colors" data-testid="footer-google-scholar">
+              <a href="https://scholar.google.co.in/citations?user=72UO79sAAAAJ&hl=en" target="_blank" rel="noopener noreferrer" className="text-sm text-slate-500 hover:text-slate-900 transition-colors" data-testid="footer-google-scholar">
                 Google Scholar
               </a>
-              <a href="https://researchgate.net" target="_blank" rel="noopener noreferrer" className="text-sm text-slate-500 hover:text-slate-900 transition-colors" data-testid="footer-researchgate">
+              <a href="researchgate.net/profile/Sanjeev-Ghai?ev=hdr_xprf&_tp=eyJjb250ZXh0Ijp7ImZpcnN0UGFnZSI6ImhvbWUiLCJwYWdlIjoiaG9tZSIsInBvc2l0aW9uIjoiZ2xvYmFsSGVhZGVyIn19" target="_blank" rel="noopener noreferrer" className="text-sm text-slate-500 hover:text-slate-900 transition-colors" data-testid="footer-researchgate">
                 ResearchGate
               </a>
             </div>
